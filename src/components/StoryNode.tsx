@@ -7,6 +7,8 @@ import { twMerge } from 'tailwind-merge';
 const StoryNode = ({ id, data, selected }: NodeProps<StoryNodeData>) => {
   const setSelectedNodeId = useStoryStore((state) => state.setSelectedNodeId);
 
+  if (!data) return null;
+
   const typeColors: Record<string, string> = {
     plot: 'border-blue-500 bg-slate-800',
     conflict: 'border-red-500 bg-slate-800',
