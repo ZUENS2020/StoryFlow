@@ -32,7 +32,7 @@ const PersistenceManager = () => {
       }
     };
     load();
-  }, []);
+  }, [setNodes, setEdges, setEntities]);
 
   // Auto-save with debounce could be better, but for now:
   useEffect(() => {

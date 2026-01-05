@@ -7,7 +7,7 @@ export interface StoryNodeData extends Record<string, unknown> {
   outline: string; // < 200 chars
   content: string; // Full chapter content
   type: StoryNodeType;
-  customFields?: Record<string, any>;
+  customFields?: Record<string, unknown>;
 }
 
 export type StoryNode = Node<StoryNodeData>;
@@ -17,6 +17,6 @@ export interface Entity {
   id: string;
   name: string;
   type: 'character' | 'item' | 'location';
-  attributes: Record<string, any>;
+  attributes: Record<string, unknown>;
   description?: string;
 }

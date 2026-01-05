@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStoryStore } from '../store/useStoryStore';
 import { StoryNode } from '../types/story';
-import { Plus, Save, Layout } from 'lucide-react';
+import { Plus } from 'lucide-react';
 
 const Toolbar = () => {
   const addNode = useStoryStore((state) => state.addNode);
@@ -16,7 +16,7 @@ const Toolbar = () => {
         title: 'New Chapter',
         outline: 'Write a summary...',
         content: '',
-        type: type as any,
+        type: type as StoryNode['data']['type'],
       },
     };
     addNode(newNode);

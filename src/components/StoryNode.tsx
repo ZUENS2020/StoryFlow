@@ -2,7 +2,6 @@ import React, { memo } from 'react';
 import { Handle, Position, NodeProps } from '@xyflow/react';
 import { StoryNodeData } from '../types/story';
 import { useStoryStore } from '../store/useStoryStore';
-import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
 const StoryNode = ({ id, data, selected }: NodeProps<StoryNodeData>) => {

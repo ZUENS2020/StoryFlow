@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { executeCommand } from '../services/agentService';
-import { Bot, Send, X, MessageSquare, Sparkles } from 'lucide-react';
+import { Bot, Send, X, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const AIChatAssistant = () => {

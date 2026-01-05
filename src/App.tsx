@@ -46,7 +46,7 @@ function App() {
             attributes: { damage: 50, rarity: 'Legendary' },
         });
     }
-  }, []);
+  }, [addNode, addEntity, nodes.length, entities.length]);
 
   return (
     <div className="relative w-full h-screen overflow-hidden bg-slate-950">
